@@ -6,6 +6,7 @@
 
 #container {
     background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    overflow: hidden;
     box-shadow: 0px -0.11px 16.9495px rgba(183, 187, 225, 0.33);
     border-radius: 0px;
     height: 100vh;
@@ -67,6 +68,8 @@
     background: #FFFFFF;
     border-radius: 30px;
     padding: 32px;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .info-block__title {
