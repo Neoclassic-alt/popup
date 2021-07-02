@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup by Boris Istigechev</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <input 
+            type="button" 
+            id="tax-deduction" 
+            value="Налоговый вычет"
+            class="nalog-button"
+        >
+    </div>
+    <div id="popup" data-showing="no">
+        <div id="popup__info-block">
+            <div class="info-block__title">
+                <h2 class="info-block__title-text">Налоговый вычет</h2>
+                <div class="info-block__close-icon"><img src="close.png"></div>
+            </div>
+            <p class="info-block__description">Используйте налоговый вычет чтобы погасить ипотеку досрочно. 
+                Размер налогового вычета составляетне более 13% от своего официального годового дохода.</p>
+            <p class="info-block__caption">Ваша зарплата в месяц</p>
+            <div class="input_margins">
+                <input type="text" class="info-block__input" id="input-salary" placeholder="Введите данные">
+                <p class="input__error input__error_disabled" id="input_error_empty">Поле обязательно для заполнения</p>
+                <p class="input__error input__error_disabled" id="input_error_nan">Неподходящий тип данных</p>
+            </div>
+            <p class="info-block__action">Рассчитать</p>
+            <div class="salary-calculations">
+            </div>
+            <div class="info-block__elements">
+                <p class="info-block__caption">Что уменьшаем</p>
+                <div class="info-block__tags">
+                    <div class="tag_active">Платёж</div>
+                    <div class="tag_disabled">Срок</div>
+                </div>
+            </div>
+            <input type="button" value="Добавить" class="info-block__add-button">
+        </div>
+    </div>
+</body>
+</html>
